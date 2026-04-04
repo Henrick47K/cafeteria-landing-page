@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café da Esquina</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte bonita -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="container header-content">
+    <h1 class="logo">☕ Café da Esquina</h1>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#local">Local</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="container">
+    <h2>Um café, um momento ☕</h2>
+    <p>O lugar perfeito para relaxar, trabalhar e conversar.</p>
+    <a href="#cardapio" class="btn">Ver Cardápio</a>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="container sobre-content">
+    <div>
+      <h2>Sobre o Café</h2>
+      <p>
+        O Café da Esquina é um espaço acolhedor e artesanal, pensado para quem ama café e boas conversas.
+        Um ambiente perfeito para relaxar ou trabalhar com conforto.
+      </p>
+    </div>
+
+    <img src="img/cafe.jpg" alt="Interior da cafeteria">
+  </div>
+</section>
+
+<section id="cardapio">
+  <div class="container">
+    <h2>Cardápio</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Bebidas</h3>
+        <ul>
+          <li>Espresso</li>
+          <li>Cappuccino</li>
+          <li>Café com leite</li>
+          <li>Mocha</li>
+          <li>Chocolate quente</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Comidas</h3>
+        <ul>
+          <li>Croissant</li>
+          <li>Pão de queijo</li>
+          <li>Torta de limão</li>
+          <li>Bolo de cenoura</li>
+          <li>Sanduíche natural</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container-galeria">
+
+    <h2>Nossas Bebidas</h2>
+    <div class="galeria">
+        <div class="itens">
+            <img src="imagens/espresso.png" alt="Espresso" width="200px">
+            <div class="descricao">Espresso</div>
+        </div>
+        <div class="itens">
+            <img src="imagens/cappuccino.png" alt="cappuccino" width="200px">
+        <div class="descricao">Cappuccino</div>
+        </div>
+        <div class="itens">
+            <img src="imagens/cafe_com_leite.png" alt="café com leite" width="200px">
+            <div class="descricao">Café com Leite</div>
+        </div>
+        <div class="itens">
+            <img src="imagens/mocha.png" alt="Mocha" width="200px">
+            <div class="descricao">Mocha</div>
+        </div>
+        <div class="itens destaque">
+            <img src="imagens/chocolate_quente.png" alt="Chocolate Quente" width="200px">
+            <div class="descricao">Chocolate Quente</div>
+        </div>
+    </div>
+
+    <h2>Comidas</h2>
+    <div class="galeria">
+        <div class="itens">
+            <img src="imagens/croissant.png" alt="Croissant" width="200px">
+            <div class="descricao">Croissant</div>
+        </div>
+        <div class="itens">
+            <img src="imagens/pao_de_queijo.png" alt="Pão de Queijo" width="200px">
+            <div class="descricao">Pão de Queijo</div>
+        </div>
+        <div class="itens">
+            <img src="imagens/torta_de_lima.png" alt="Torta de Limão" width="200px">
+            <div class="descricao">Torta de Limão</div>
+        </div>
+        <div class="itens">
+            <img src="imagens/bolo_de_cenoura.png" alt="Bolo de Cenoura" width="200px">
+            <div class="descricao">Bolo de Cenoura</div>
+        </div>
+        <div class="itens destaque">
+            <img src="imagens/sanduiche.png" alt="Sanduíche Natural" width="200px">
+            <div class="descricao">Saundíche Natural</div>
+        </div>
+    </div>
+</div>
+
+<section id="local">
+  <div class="container">
+    <h2>Horário & Localização</h2>
+
+    <p>📍 Rua Exemplo, 123 - Canoas/RS</p>
+    <p>⏰ Segunda a Sábado: 08h às 19h</p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Canoas&output=embed"
+      width="100%" 
+      height="250" 
+      style="border:0;">
+    </iframe>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <h2>Contato</h2>
+
+    <p>📞 (51) 99999-9999</p>
+    <p>📧 contato@cafedaesquina.com</p>
+
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="Mensagem"></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>©️ 2026 Café da Esquina | Feito com ☕</p>
+</footer>
+
+<!-- Botão WhatsApp -->
+<a href="https://wa.me/5551999999999" class="whatsapp">💬</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
