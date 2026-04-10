@@ -232,27 +232,69 @@ footer {
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
 
+/* Tablets e Celulares maiores */
+@media (max-width: 768px) {
   .header-content {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    text-align: center;
   }
 
   .menu {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
   }
 
   .sobre-content {
     flex-direction: column;
+    text-align: center;
   }
 
   .sobre-content img {
     width: 100%;
+    margin-top: 15px;
   }
 
   .grid {
     flex-direction: column;
   }
+
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .destaque img {
+    height: 100%;
+    max-height: 200px;
+  }
 }
+
+/* Celulares*/
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .container-galeria {
+    margin: 0 10px;
+  }
+  
+  .whatsapp {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+  }
+}
+
